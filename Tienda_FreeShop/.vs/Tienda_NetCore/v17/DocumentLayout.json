@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Proyectos\\Tienda_FreeShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|c:\\proyectos\\tienda_freeshop\\tienda_netcore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|solutionrelative:tienda_netcore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|c:\\proyectos\\tienda_freeshop\\tienda_netcore\\tienda_netcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|solutionrelative:tienda_netcore\\tienda_netcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|c:\\proyectos\\tienda_freeshop\\tienda_netcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|solutionrelative:tienda_netcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|c:\\proyectos\\tienda_freeshop\\tienda_netcore\\models\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF2570D4-C0A3-4126-8987-932B813408AD}|Tienda_NetCore\\Tienda_NetCore.csproj|solutionrelative:tienda_netcore\\models\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 498,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\Program.cs",
+              "RelativeDocumentMoniker": "Tienda_NetCore\\Program.cs",
+              "ToolTip": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\Program.cs",
+              "RelativeToolTip": "Tienda_NetCore\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAuwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:40:16.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\Models\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Tienda_NetCore\\Models\\Data\\DataSeeder.cs",
+              "ToolTip": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\Models\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "Tienda_NetCore\\Models\\Data\\DataSeeder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:51:31.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\appsettings.json",
+              "RelativeDocumentMoniker": "Tienda_NetCore\\appsettings.json",
+              "ToolTip": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\appsettings.json",
+              "RelativeToolTip": "Tienda_NetCore\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-12T18:40:58.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tienda_NetCore",
+              "DocumentMoniker": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\Tienda_NetCore.csproj",
+              "RelativeDocumentMoniker": "Tienda_NetCore\\Tienda_NetCore.csproj",
+              "ToolTip": "C:\\Proyectos\\Tienda_FreeShop\\Tienda_NetCore\\Tienda_NetCore.csproj",
+              "RelativeToolTip": "Tienda_NetCore\\Tienda_NetCore.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-12T18:39:59.949Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

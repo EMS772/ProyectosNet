@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Tienda_NetCore.Models.Entidades.Venta>
+
+
+
+
+<link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet"/>
+<link href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+
+<div class="container mt-4 p-5 content-wrapper">
+    <h2 class="text-center mb-4">Pedidos</h2>
+
+    <table class="table table-bordered table-striped" id="VentasTable">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Fecha.ToString("dd/MM/yyyy")
+                    </td>
+                    <td>
+                        @item.Cantidad
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#VentasTable').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+                },
+                "responsive": true,
+                "pageLength": 25,
+                "lengthMenu": [
+                    [25, 50, 100, 200, -1],
+                    [25, 50, 100, 200, "Todos"]
+                ]                    
+            });
+            $('#carrito-btn').hide();
+        });
+    </script>
+}

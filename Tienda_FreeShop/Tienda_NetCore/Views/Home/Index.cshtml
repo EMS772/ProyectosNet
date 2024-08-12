@@ -1,0 +1,189 @@
+﻿@model IEnumerable<Tienda_NetCore.Models.Entidades.Producto>
+
+@{
+    Layout = "_Layout";
+}
+
+<header class="py-3">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/Fotos_Perfil%2Fpixelcut-export%20Tecno.jpeg?alt=media&token=4e0cf784-0a7b-405f-91da-b8b023eed1b0" class="d-block w-100 h-50 mx-auto" alt="Slide 1">
+                <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h5 class="display-4 fw-bolder">Tecnología de Punta</h5>
+                        <p class="lead fw-normal text-white-90 mb-0">Encuentra monitores de alta resolución ideales para tus necesidades de trabajo o entretenimiento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/Fotos_Perfil%2Fpixelcut-export%20Casa.jpeg?alt=media&token=4d65675f-3a96-4720-bb83-6c33a9e09ae7" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h5 class="display-4 fw-bolder">Estilo Clásico</h5>
+                        <p class="lead fw-normal text-white-90 mb-0">Explora nuestra colección de zapatillas Jordan 1 en blanco y negro, perfectas para cualquier ocasión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/Fotos_Perfil%2Fpixelcut-export%20Tenis.jpeg?alt=media&token=4fd37152-db82-4fa2-97d0-655a9ddda4ce" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h5 class="display-4 fw-bolder">Confort y Estilo</h5>
+                        <p class="lead fw-normal text-white-90 mb-0">Transforma tu hogar con nuestras alfombras suaves y cómodas, ideales para cualquier habitación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+
+
+
+<div class="container mt-4">
+    <ul class="nav nav-pills mb-4">
+        <li class="nav-item">
+            <a class="nav-link @(ViewBag.SelectedCategory == null ? "active" : "")" href="@Url.Action("Index", "Home")">Todos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewBag.SelectedCategory == "4" ? "active" : "")" href="@Url.Action("Index", "Home", new { categoria = 4 })">Deportes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewBag.SelectedCategory == "5" ? "active" : "")" href="@Url.Action("Index", "Home", new { categoria = 5 })">Electrónica</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewBag.SelectedCategory == "6" ? "active" : "")" href="@Url.Action("Index", "Home", new { categoria = 6 })">Hogar</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container px-4 px-lg-5 mt-5 ">
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        @foreach (var producto in Model)
+        {
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="@producto.ImagenUrl" alt="@producto.Nombre" />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">@producto.Nombre</h5>
+                            <!-- Product price-->
+                            @($"${producto.Precio}")
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-to-cart" data-product-id="@producto.Id">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="showInPopup('@Url.Action("Detalle", "Home")/' + @producto.Id, '@producto.Nombre')">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="form-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="form-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div id="form-modal-body" class="modal-body">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <ul class="nav justify-content-center mt-2">
+            <li class="nav-item">
+                <a class="nav-link" href="https://web.facebook.com/ender.realsosa">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/realsosa27/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+
+        </ul>
+        <span class="text-muted">&copy; 2024 Copyright. JulioCesar.com</span>
+    </div>
+</footer>
+
+
+@section Scripts {
+    <script src="~/js/site.js"></script> <!-- Asegúrate de que esta ruta es correcta -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Función para actualizar la cantidad del carrito
+            function actualizarCantidadCarrito() {
+                $.ajax({
+                    url: '/Carrito/ObtenerCantidadCarrito',
+                    type: 'GET',
+                    success: function (cantidad) {
+                        console.log('Cantidad del carrito obtenida: ' + cantidad); // Registro para depuración
+                        $('#carrito-cantidad').text(cantidad);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log('Error al obtener la cantidad del carrito:', status, error); // Registro para depuración
+                        alert('Error al comunicarse con el servidor');
+                    }
+                });
+            }
+
+            // Llamar a la función al cargar la página
+            actualizarCantidadCarrito();
+
+            // Manejar el clic en "Agregar al carrito"
+            $('.add-to-cart').click(function (e) {
+                e.preventDefault();
+                var productoId = $(this).data('product-id');
+                console.log('Agregando al carrito el producto con ID:', productoId); // Registro para depuración
+                $.ajax({
+                    url: '/Carrito/AgregarAlCarrito',
+                    type: 'POST',
+                    data: { productoId: productoId },
+                    success: function (response) {
+                        console.log('Respuesta al agregar al carrito:', response); // Registro para depuración
+                        if (response.success) {
+                            actualizarCantidadCarrito();
+                        } else {
+                            alert('Error al agregar el producto al carrito');
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log('Error al agregar al carrito:', status, error); // Registro para depuración
+                        alert('Error al comunicarse con el servidor');
+                    }
+                });
+            });
+
+            // Manejar el clic en el botón del carrito
+            $('#carrito-btn').click(function (e) {
+                e.preventDefault();
+                window.location.href = '/Carrito/MostrarCarrito';
+            });
+        });
+    </script>
+
+}

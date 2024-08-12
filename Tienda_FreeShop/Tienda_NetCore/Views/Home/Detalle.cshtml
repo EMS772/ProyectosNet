@@ -1,0 +1,24 @@
+﻿@model Tienda_NetCore.Models.Entidades.Producto
+
+@{
+    Layout = null; // Asegúrate de que el nombre del archivo de diseño es correcto
+}
+<div class="modal-header">
+    <h5 class="modal-title" id="productoModalLabel">@Model.Nombre</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <div class="row gx-4 gx-lg-5 align-items-center">
+        <div class="col-md-6">
+            <img class="card-img-top mb-5 mb-md-0" src="@Model.ImagenUrl" alt="@Model.Nombre" />
+        </div>
+        <div class="col-md-6 text-center">
+            <hr />
+            <h1 class="display-5 fw-bolder">@Model.Nombre</h1>
+            <div class="fs-5 mb-5">
+                <span>@($"${Model.Precio}")</span>
+            </div>
+            <p class="lead">@Model.Descripcion</p>
+        </div>
+    </div>
+</div>

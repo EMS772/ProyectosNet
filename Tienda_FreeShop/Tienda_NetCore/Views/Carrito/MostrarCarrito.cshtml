@@ -1,0 +1,195 @@
+﻿@model Tienda_NetCore.Models.Entidades.Carrito
+
+@{
+    
+    Layout = "_Layout"; 
+}
+
+
+
+<div class="container mt-4 p-5">
+    <h2 class="text-center">Carro de Compras</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CarritoItems)
+            {
+                <tr>
+                    <td>
+                        <img src="@item.Producto.ImagenUrl" class="img-fluid" alt="Imagen del Producto" style="max-width: 100px;" />
+                    </td>
+                    <td>@item.Producto.Nombre</td>
+                    <td>@item.Producto.Precio.ToString("C")</td>
+                    <td>
+                        <div class="input-group">
+                            <input class="form-control text-center quantity-input" type="number"
+                                   value="@item.Cantidad" min="1" max="@item.Producto.Stock"
+                                   data-price="@item.Producto.Precio" data-id="@item.Id" data-stock="@item.Producto.Stock"
+                                   style="max-width: 5rem" />
+                        </div>
+                    </td>
+                    <td class="item-total">@((item.Cantidad * item.Producto.Precio).ToString("C"))</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm eliminar-item" data-id="@item.Id">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="row mt-4">
+        
+        <div class="col-md-6 text-right">
+            <p class="h5">Subtotal: <span id="cart-subtotal">@Model.CarritoItems.Sum(ci => ci.Cantidad * ci.Producto.Precio).ToString("C")</span></p>            <p class="text-muted">Los gastos de envío, impuestos y descuentos se calcularán en el pago.</p>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-success mr-2">Seguir Comprando</a>
+            <form id="confirmar-pedido-form" asp-action="ConfirmarPedido" method="post" class="d-inline">
+                <input type="submit" value="Finalizar Compra" class="btn btn-success" id="finalizar-compra-btn" />
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+
+        function updateItemTotal(input) {
+            const quantity = parseInt(input.value);
+            const price = parseFloat(input.dataset.price);
+            const total = quantity * price;
+            const itemTotal = input.closest('tr').querySelector('.item-total');
+            itemTotal.textContent = total.toFixed(2) + ' €';
+        }
+
+        function updateCartSubtotal() {
+            let subtotal = 0;
+            document.querySelectorAll('.item-total').forEach(totalElement => {
+                const total = parseFloat(totalElement.textContent.replace(' €', ''));
+                subtotal += total;
+            });
+            document.getElementById('cart-subtotal').textContent = subtotal.toFixed(2) + ' €';
+
+            if (document.querySelectorAll('.table tbody tr').length === 0) {
+                window.location.href = '@Url.Action("CarritoVacio", "Carrito")';
+            }
+
+        }
+
+        quantityInputs.forEach(input => {
+            input.addEventListener('change', function () {
+                if (this.value < 1) {
+                    this.value = 1;
+                }
+                updateItemTotal(this);
+                updateCartSubtotal();
+                updateQuantityOnServer(this.dataset.id, this.value);
+            });
+
+            input.addEventListener('input', function () {
+                updateItemTotal(this);
+                updateCartSubtotal();
+            });
+        });
+
+        function updateQuantityOnServer(itemId, quantity) {
+            function updateQuantityOnServer(itemId, quantity) {
+                fetch('/Carrito/ActualizarCantidad', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    },
+                    body: JSON.stringify({ id: itemId, cantidad: quantity })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (!data.success) {
+                            alert('Error al actualizar la cantidad: ' + data.message);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Ocurrió un error al actualizar la cantidad');
+                    });
+            }
+
+        }
+
+        function eliminarDelCarrito(itemId) {
+            fetch('/Carrito/EliminarDelCarrito', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify(itemId)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const itemRow = document.querySelector(`button[data-id="${itemId}"]`).closest('tr');
+                        if (itemRow) itemRow.remove();
+                        updateCartSubtotal(); 
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Ocurrió un error al eliminar el ítem del carrito');
+                });
+        }
+
+        document.querySelectorAll('.eliminar-item').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemId = button.getAttribute('data-id');
+                eliminarDelCarrito(itemId);
+            });
+        });
+
+        document.getElementById('confirmar-pedido-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: 'Una vez finalizada la compra, no podrás modificarla.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#28a745',
+                confirmButtonText: 'Sí, finalizar compra',
+                cancelButtonText: 'Cancelar',
+                reverseButtons: true,
+                allowOutsideClick: false // Esto evita que se cierre al hacer clic fuera
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: '¡Compra Confirmada!',
+                        text: 'Tu pedido ha sido procesado exitosamente. Gracias por tu compra.',
+                        icon: 'success',
+                        confirmButtonText: 'OK',
+                        allowOutsideClick: false // Esto evita que se cierre al hacer clic fuera
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            this.submit();
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
