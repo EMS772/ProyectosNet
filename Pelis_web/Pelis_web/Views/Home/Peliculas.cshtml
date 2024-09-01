@@ -1,0 +1,35 @@
+﻿@model Pelis_web.Models.PeliculaViewModel
+
+<link rel="stylesheet" href="~/css/reco.css" />
+
+
+<div class='container'>
+    <div class="container_content">
+        <div class="container_content_inner">
+            <div>
+                <h1>@Model.Titulo</h1>
+            </div>
+            <div class="par">
+                <p>
+                    @Model.Description
+                </p>
+            </div>
+            <div>
+                <p>Género: @Model.Genero</p>
+                @if (Model.CalificacionImdb.HasValue)
+                {
+                    <p>Calificación IMDB: @Model.CalificacionImdb.Value.ToString("F1")</p>
+                }
+            </div>
+            <div class="btns">
+                <a class='btns_more' href="@Url.Action("Index", "Home")">Reintentar</a>
+            </div>
+        </div>
+    </div>
+    <div class="container_outer_img">
+        <div class="img-inner">
+            <img src='@Model.ImageUrl' alt="@Model.Titulo" class="container_img" />
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>

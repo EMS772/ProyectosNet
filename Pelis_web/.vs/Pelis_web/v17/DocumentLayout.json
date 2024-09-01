@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Proyectos\\Pelis_web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|c:\\proyectos\\pelis_web\\pelis_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|solutionrelative:pelis_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|c:\\proyectos\\pelis_web\\pelis_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|solutionrelative:pelis_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|c:\\proyectos\\pelis_web\\pelis_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|solutionrelative:pelis_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|c:\\proyectos\\pelis_web\\pelis_web\\views\\home\\peliculas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|solutionrelative:pelis_web\\views\\home\\peliculas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|c:\\proyectos\\pelis_web\\pelis_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|solutionrelative:pelis_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|c:\\proyectos\\pelis_web\\pelis_web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1628B804-314C-4C61-8378-F95EF6540453}|Pelis_web\\Pelis_web.csproj|solutionrelative:pelis_web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1133,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Proyectos\\Pelis_web\\Pelis_web\\appsettings.json",
+              "RelativeDocumentMoniker": "Pelis_web\\appsettings.json",
+              "ToolTip": "C:\\Proyectos\\Pelis_web\\Pelis_web\\appsettings.json",
+              "RelativeToolTip": "Pelis_web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-01T18:44:03.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Proyectos\\Pelis_web\\Pelis_web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Pelis_web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Proyectos\\Pelis_web\\Pelis_web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Pelis_web\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAK8BAAAAzMzMzMwvwLwBAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-30T02:04:55.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Pelis_web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Pelis_web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAADYAAAAAMzMzMzMpwIIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T02:38:24.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pelis_web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Pelis_web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAGUAAACAMzMzMzMrwGcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T02:34:59.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Peliculas.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Views\\Home\\Peliculas.cshtml",
+              "RelativeDocumentMoniker": "Pelis_web\\Views\\Home\\Peliculas.cshtml",
+              "ToolTip": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Views\\Home\\Peliculas.cshtml",
+              "RelativeToolTip": "Pelis_web\\Views\\Home\\Peliculas.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T02:34:03.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Program.cs",
+              "RelativeDocumentMoniker": "Pelis_web\\Program.cs",
+              "ToolTip": "C:\\Proyectos\\Pelis_web\\Pelis_web\\Program.cs",
+              "RelativeToolTip": "Pelis_web\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T02:37:40.332Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

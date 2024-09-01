@@ -1,0 +1,134 @@
+﻿@model IEnumerable<Pelis_web.Models.Entidades.Pregunta>;
+
+@{
+    Layout = "_Layout";
+}
+<section>
+    <div class="swiper-container slideshow">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <h1 class="name">
+                   
+                </h1>
+                <div class="square"></div>
+                <div class="card">
+                    <div class="card-title-wrap slide-next">
+                        <h1 class="title">
+                            <span class="copy-wrap">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/SeriPelis%2FLogo-Pelis.png?alt=media&token=19d65e21-31f5-441f-a3b8-d1dd3011cb97" alt="Logo de Pelis" style="max-width: 100%; height: auto;">
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="card-img">
+                    </div>
+                </div>
+               
+                <h2 class="copyright">
+                    <span >
+                        Donde cada recomendación cuenta
+                    </span>
+                </h2>
+            </div>
+
+            @foreach (var pregunta in Model)
+            {
+                <div class="swiper-slide slide">
+                    
+                    <div class="square"></div>
+                    <div class="card">
+                        <div class="card-title-wrap">
+                            <h1 class="title">
+                                <span class="copy-wrap">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div>
+                                            @pregunta.TextoPregunta
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            @foreach (var opcion in pregunta.Opciones)
+                                            {
+                                                <button type="button" class="btn btn-secondary slide-next" value="@opcion.TextoOpcion">@opcion.TextoOpcion</button>
+                                            }
+                                        </div>
+                                    </div>
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="card-img">
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="swiper-slide slideshow">
+                <h1 class="name">
+                </h1>
+                <div class="square"></div>
+                <div class="card">
+                    <div class="card-title-wrap">
+                        <h1 class="title">
+                            <span class="copy-wrap">
+                                <div class="d-flex flex-column align-items-center">
+                                    <button type="submit" class="btn btn-primary">Ver Recomendación</button>
+
+                                </div>
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="card-img">
+                    </div>
+                </div>
+
+            </div>
+   
+        </div>
+
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        let userSelections = [];
+        let totalQuestions = @Model.Count();
+        let currentQuestion = 0;
+
+        $(document).ready(function() {
+            $('.btn-secondary').click(function() {
+                let selectedOption = $(this).val();
+                userSelections.push(selectedOption);
+                currentQuestion++;
+            });
+
+            $('.btn-primary').click(function() {
+                if (currentQuestion === totalQuestions) {
+                    getMovieRecommendation();
+                } else {
+                    alert("Por favor, responde todas las preguntas antes de ver la recomendación.");
+                }
+            });
+        });
+
+        function getMovieRecommendation() {
+            $.ajax({
+                url: '/Home/GetRecommendation',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(userSelections),
+                success: function (response) {
+                    if (response.error) {
+                        alert(response.error);
+                    } else {
+                        window.location.href = '/Home/Peliculas?' +
+                            'title=' + encodeURIComponent(response.title) +
+                            '&description=' + encodeURIComponent(response.description) +
+                            '&imageUrl=' + encodeURIComponent(response.imageUrl) +
+                            '&genero=' + encodeURIComponent(response.genero) +
+                            '&calificacionImdb=' + encodeURIComponent(response.calificacionImdb);
+                    }
+                },
+                error: function (error) {
+                    console.error('Error getting movie recommendation:', error);
+                    alert('Hubo un error al obtener la recomendación. Por favor, intenta de nuevo.');
+                }
+            });
+        }
+    </script>
+}
