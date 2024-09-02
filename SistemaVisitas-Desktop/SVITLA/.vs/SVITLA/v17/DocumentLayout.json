@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|c:\\users\\julio\\source\\repos\\webtienda\\svitla\\capapresentacionusuario\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|solutionrelative:capapresentacionusuario\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionusuario\\u.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|solutionrelative:capapresentacionusuario\\u.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionusuario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|solutionrelative:capapresentacionusuario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionusuario\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|solutionrelative:capapresentacionusuario\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionusuario\\u.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{486910D9-67A2-4628-AD3D-613420A51AA7}|CapaPresentacionUsuario\\CapaPresentacionUsuario.csproj|solutionrelative:capapresentacionusuario\\u.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionadmin\\usuariosa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\usuariosa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionadmin\\edificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\edificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionadmin\\edificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\edificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionadmin\\aulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\aulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capapresentacionadmin\\aulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4681FCB5-F226-4DF3-AC7F-44F956046872}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\aulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capanegocio\\cnvisitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cnvisitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capadatos\\cdvisitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cdvisitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capanegocio\\cnusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cnusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capadatos\\cdusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cdusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capanegocio\\cnedificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cnedificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capadatos\\cdedificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cdedificios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capanegocio\\cnaulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{366EA2B1-188E-4EA0-9969-C58A6FDB0942}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cnaulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\capadatos\\cdaulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9441EA-EB5D-49D9-976F-D03582550462}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cdaulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\App.config",
+              "RelativeDocumentMoniker": "CapaPresentacionUsuario\\App.config",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\App.config",
+              "RelativeToolTip": "CapaPresentacionUsuario\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-08T15:50:24.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "U.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\U.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionUsuario\\U.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\SVITLA\\CapaPresentacionUsuario\\U.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\SVITLA\\CapaPresentacionUsuario\\U.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T15:50:13.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\Program.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionUsuario\\Program.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\Program.cs",
+              "RelativeToolTip": "CapaPresentacionUsuario\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T15:50:09.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\Menu.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionUsuario\\Menu.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\Menu.cs",
+              "RelativeToolTip": "CapaPresentacionUsuario\\Menu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:25:35.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "U.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\U.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionUsuario\\U.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionUsuario\\U.cs",
+              "RelativeToolTip": "CapaPresentacionUsuario\\U.cs",
+              "ViewState": "AQIAAA0AAAAAMzMzMzMrwEMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:24:00.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuariosA.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\UsuariosA.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\UsuariosA.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\UsuariosA.cs",
+              "RelativeToolTip": "CapaPresentacionAdmin\\UsuariosA.cs",
+              "ViewState": "AQIAAKwAAAAAz8zMzMwqwOkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:21:37.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edificios.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\Edificios.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Edificios.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\Edificios.cs",
+              "RelativeToolTip": "CapaPresentacionAdmin\\Edificios.cs",
+              "ViewState": "AQIAAJsAAAAAaGZmZmYawKUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:20:23.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edificios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\Edificios.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Edificios.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\SVITLA\\CapaPresentacionAdmin\\Edificios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\SVITLA\\CapaPresentacionAdmin\\Edificios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:20:19.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Aulas.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\Aulas.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Aulas.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\Aulas.cs",
+              "RelativeToolTip": "CapaPresentacionAdmin\\Aulas.cs",
+              "ViewState": "AQIAABYAAAAgNDMzMzMywLIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:17:22.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Aulas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaPresentacionAdmin\\Aulas.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Aulas.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\SVITLA\\CapaPresentacionAdmin\\Aulas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\SVITLA\\CapaPresentacionAdmin\\Aulas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:17:16.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CNVisitas.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNVisitas.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CNVisitas.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNVisitas.cs",
+              "RelativeToolTip": "CapaNegocio\\CNVisitas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:16:56.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CDVisitas.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDVisitas.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CDVisitas.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDVisitas.cs",
+              "RelativeToolTip": "CapaDatos\\CDVisitas.cs",
+              "ViewState": "AQIAAAYAAAD4ZmZmZmYkwBQAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:15:52.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CDUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDUsuario.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CDUsuario.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDUsuario.cs",
+              "RelativeToolTip": "CapaDatos\\CDUsuario.cs",
+              "ViewState": "AQIAADYAAAAAmpmZmZktwHIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:13:58.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CNEdificios.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNEdificios.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CNEdificios.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNEdificios.cs",
+              "RelativeToolTip": "CapaNegocio\\CNEdificios.cs",
+              "ViewState": "AQIAAAIAAABAMzMzMzMbwA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:12:54.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CNUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNUsuario.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CNUsuario.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNUsuario.cs",
+              "RelativeToolTip": "CapaNegocio\\CNUsuario.cs",
+              "ViewState": "AQIAABYAAAAAzczMzMwUwCUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:12:47.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CDEdificios.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDEdificios.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CDEdificios.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDEdificios.cs",
+              "RelativeToolTip": "CapaDatos\\CDEdificios.cs",
+              "ViewState": "AQIAACgAAACAzczMzMwUwDoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:11:48.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CNAulas.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNAulas.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CNAulas.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaNegocio\\CNAulas.cs",
+              "RelativeToolTip": "CapaNegocio\\CNAulas.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:10:56.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CDAulas.cs",
+              "DocumentMoniker": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDAulas.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CDAulas.cs",
+              "ToolTip": "C:\\Users\\Julio\\source\\repos\\WebTienda\\SVITLA\\CapaDatos\\CDAulas.cs",
+              "RelativeToolTip": "CapaDatos\\CDAulas.cs",
+              "ViewState": "AQIAADAAAADAZmZmZmYiwEIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T03:09:54.236Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

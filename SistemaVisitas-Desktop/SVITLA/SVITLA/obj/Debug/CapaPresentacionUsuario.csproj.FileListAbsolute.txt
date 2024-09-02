@@ -1,0 +1,12 @@
+C:\Users\Julio\source\repos\SVITLA\SVITLA\bin\Debug\SVITLA.exe.config
+C:\Users\Julio\source\repos\SVITLA\SVITLA\bin\Debug\SVITLA.exe
+C:\Users\Julio\source\repos\SVITLA\SVITLA\bin\Debug\SVITLA.pdb
+C:\Users\Julio\source\repos\SVITLA\SVITLA\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\CapaPresentacionUsuario.csproj.AssemblyReference.cache
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\SVITLA.Login.resources
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\SVITLA.Properties.Resources.resources
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\CapaPresentacionUsuario.csproj.GenerateResource.cache
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\CapaPresentacionUsuario.csproj.CoreCompileInputs.cache
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\CapaPres.C8B7E5ED.Up2Date
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\SVITLA.exe
+C:\Users\Julio\source\repos\SVITLA\SVITLA\obj\Debug\SVITLA.pdb
