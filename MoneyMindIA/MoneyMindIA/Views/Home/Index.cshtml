@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMind</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/MoneyMind%2FLogoMMb2.png?alt=media&token=f3e6e01e-66b9-489d-8a17-0ade2489e3dd" alt="Logo de MoneyMind" class="logo">
+
+    <div class="container">
+        <p class="notice">MoneyMind solo está disponible en web, pronto estaremos en tu teléfono 😉</p>
+        <h1 class="title">La inteligencia detrás de tus decisiones financieras.</h1>
+
+        <div class="button-container">
+            <button class="start-button" onclick="redirectToLogin()">EMPEZAR</button>
+            <p class="subtext">¡Maneja tus ingresos ahora!</p>
+        </div>
+
+        <div class="crypto-steps-container">
+            <h1 class="crypto-title">¿Como funciona MoneyMind?</h1>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-paypal" style="font-size: 32px; color: #3a7d6d;"></i>
+                    </div>
+                    <h3 class="step-title">1. Vincula tu billetera PayPal</h3>
+                    <p class="step-text">Conecta tu cuenta PayPal para visualizar tu balance y actividad financiera (gastos e ingresos) de manera centralizada.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-bullseye" style="font-size: 32px; color: #3a7d6d;"></i>
+                    </div>
+                    <h3 class="step-title">2. Establece tus metas financieras</h3>
+                    <p class="step-text">Dirígete al panel principal, ingresa una meta y nuestro sistema te brindará herramientas y seguimiento para ayudarte a cumplirla. 😊</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-brain" style="font-size: 32px; color: #3a7d6d;"></i>
+                    </div>
+                    <h3 class="step-title">3. Asesoría inteligente con IA</h3>
+                    <p class="step-text">Nuestra inteligencia artificial analiza tus patrones financieros para ofrecerte recomendaciones personalizadas y estrategias de optimización.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sección Sobre Nosotros -->
+        <div class="crypto-steps-container">
+            <!-- Cambiado de about-us-container -->
+            <h1 class="about-title">Sobre nosotros</h1>
+           
+            <p class="step-text">
+                <!-- Cambiado el class del texto -->
+                En MoneyMind, creemos que la libertad financiera no debería ser un lujo, sino una meta alcanzable para todos.
+                Nuestra plataforma está diseñada para ayudarte a entender tus hábitos de gasto, optimizar tus recursos y alcanzar tus metas financieras de manera inteligente y sencilla.
+            </p>
+            <p class="step-text">
+                <!-- Cambiado el class del texto -->
+                Combinamos tecnología avanzada e inteligencia artificial para ofrecerte recomendaciones personalizadas que se adaptan a tu estilo de vida. Desde el seguimiento de tus ingresos y gastos hasta el análisis predictivo y la planificación de objetivos, estamos aquí para que tomes el control total de tus finanzas.
+            </p>
+            <p class="step-text">
+                <!-- Cambiado el class del texto -->
+                Nuestra misión es empoderarte para que tomes decisiones informadas y seguras, fomentando el ahorro y ayudándote a construir un futuro financiero sólido.
+            </p>
+            <p class="step-text">
+                <!-- Cambiado el class del texto -->
+                Tu dinero, tu camino. Nosotros te damos las herramientas para llegar más lejos. 🚀🌿
+            </p>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/MoneyMind%2FLogoMMb4.png?alt=media&token=b06dcdf4-7028-4ffb-83bf-b4f01b89b6c2" alt="MoneyMind Logo" class="footer-logo">
+                <p>© 2025 MoneyMind. Todos los derechos reservados.</p>
+                <p>浙ITLA备8738479288号浙公网安备</p>
+                <p>728377827389798838 号</p>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fas fa-comments"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function redirectToLogin() {
+            window.location.href = '@Url.Action("Login", "Auth")';
+        }
+    </script>
+</body>
+</html>

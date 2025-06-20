@@ -1,0 +1,226 @@
+/* wallet.css */
+@import url('../css/dashboard.css');
+
+:root {
+    --primary-color: #359d7a;
+    --secondary-color: #359d7a;
+    --accent-color: #f1c40f;
+    --text-color: #333;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem;
+}
+
+/* Estilos generales */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    .header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header .subtext {
+        color: #666;
+        font-size: 1rem;
+    }
+
+/* Sección de PayPal */
+.add-paypal-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.paypal-placeholder {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+    .paypal-placeholder i {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+.add-paypal-button {
+    background-color: #003087;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .add-paypal-button:hover {
+        background-color: #002366;
+    }
+
+    .add-paypal-button i {
+        margin-right: 0.5rem;
+    }
+
+/* Cuenta vinculada */
+.linked-account {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.account-card {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.account-logo i {
+    font-size: 2rem;
+    color: #003087;
+    margin-right: 1rem;
+}
+
+.account-details {
+    text-align: left;
+}
+
+.account-name {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.account-email {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Estilos para la sección de tarjeta */
+.add-card-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.add-card-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+    .add-card-button:hover {
+        background-color: #218838;
+    }
+
+.card-input-form {
+    margin: 2rem auto;
+    max-width: 400px;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group.half {
+    flex: 1;
+}
+
+.submit-card-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+    .submit-card-button:hover {
+        background-color: #218838;
+    }
+
+.linked-card {
+    margin: 2rem auto;
+    max-width: 400px;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-logo i {
+    font-size: 2rem;
+    color: #333;
+    margin-right: 1rem;
+}
+
+.card-details p {
+    margin: 0;
+}
+
+.card-number {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-name {
+    color: #666;
+}
+
+.unlink-card-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+    .unlink-card-button:hover {
+        background-color: #c82333;
+    }

@@ -1,0 +1,208 @@
+/* login.css */
+@import url('../css/styles.css');
+
+:root {
+    --primary-color: 
+    #359d7a;
+    --secondary-color:
+    #359d7a;
+    --text-color: #333;
+    --white: #ffffff;
+    --light-gray:
+    #359d7a;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    padding: 1rem;
+}
+
+.login-box {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 2rem;
+}
+
+.login-header .logo {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.log{
+    max-width: 100%;
+    height: auto;
+}
+
+.login-header h1 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-header .subtitle {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Formulario */
+.login-form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.login-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Separador */
+.separator {
+    margin: 1.5rem 0;
+    position: relative;
+    text-align: center;
+}
+
+.separator span {
+    background-color: var(--white);
+    padding: 0 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+.separator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    z-index: 0;
+}
+
+/* Botón de Google */
+.google-login {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.google-login:hover {
+    background-color: var(--light-gray);
+}
+
+.google-logo {
+    width: 20px;
+    height: 20px;
+}
+
+/* Enlace de Registro */
+.register-link {
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+.alert-warning {
+    background: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.resend-link {
+    color: #d39e00;
+    cursor: pointer;
+    text-decoration: underline;
+}

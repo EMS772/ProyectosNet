@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - MoneyMindIA</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/chat.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="chat-layout">
+        <!-- Sidebar Colapsable -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <!-- Logo cuando está abierto -->
+                    <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/MoneyMind%2FLogoMMC.png?alt=media&token=f4b7b014-bd3d-4fca-992d-38324516ae3f" class="logo-open" alt="Logo Completo">
+
+                    <!-- Logo cuando está cerrado -->
+                    <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/MoneyMind%2FLogoMMA.png?alt=media&token=afa8e987-d925-4a0c-8afa-76ed6ecf4e36" class="logo-closed" alt="ogo Icono">
+
+                    <!-- Flecha toggle -->
+                    <span class="toggle-button">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+
+                </div>
+                <button class="new-chat-button">
+                    <i class="far fa-envelope"></i>
+                    <span>Nuevo chat</span>
+                </button>
+            </div>
+
+            <div class="chat-history">
+                <div class="history-scroll-container">
+                    <!-- Los chats se cargarán dinámicamente aquí -->
+                    <div class="history-placeholder">
+                        <i class="fas fa-comments"></i>
+                        <span class="placeholder-text">Historial vacío</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <nav class="sidebar-footer">
+                <a href="@Url.Action("Dashboard", "Home")" class="nav-item">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-text"></span>
+                </a>
+            </nav>
+
+
+
+        </aside>
+
+        <!-- Área Principal -->
+        <main class="chat-main">
+            @RenderBody() <!-- Aquí se renderiza el contenido específico del chat -->
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('debugButton').addEventListener('click', () => {
+            const console = document.getElementById('debugConsole');
+            console.style.display = console.style.display === 'none' ? 'block' : 'none';
+            console.innerHTML = `<pre>${JSON.stringify(currentChat, null, 2)}</pre>`;
+        });
+    </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Define las URLs antes de cargar chat.js
+        var financialAdviceUrls = {
+
+            getHistory: '@Url.Action("GetRecomendationHistory", "FinancialAdvice")',
+            getMessages: '@Url.Action("GetRecomendationMessages", "FinancialAdvice")',
+            startNew: '@Url.Action("StartNewRecomendation", "FinancialAdvice")',
+            getAdvice: '@Url.Action("GetAdvice", "FinancialAdvice")',
+            saveMessage: '@Url.Action("SaveMessage", "FinancialAdvice")',
+            saveConversation: '@Url.Action("SaveConversation", "FinancialAdvice")'
+        };
+    </script>
+    <script src="~/js/chat.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

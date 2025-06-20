@@ -1,0 +1,274 @@
+/* Estilos base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a3c3bc;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    position: relative;
+    max-width: 1200px;
+    padding: 180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos del logo */
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: auto;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Estilos de la sección principal */
+.notice {
+    font-size: 0.9rem;
+    color: #7a8f87;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.button-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.start-button {
+    background-color: #3a7d6d;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #2f6455;
+}
+
+.subtext {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #3a7d6d;
+}
+
+/* Estilos de la sección de pasos y sobre nosotros */
+.crypto-steps-container {
+    padding: 4rem 1rem;
+    margin-top: 15rem;
+}
+
+.crypto-steps-container:last-child {
+    margin-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+.crypto-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+}
+
+.step-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-wrapper {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-title {
+    color: #3a7d6d;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.step-text {
+    color: #7a8f87;
+    font-size: 0.9rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    line-height: 1.6;
+}
+
+.crypto-steps-container:last-child .step-text {
+    color: #ffffff;
+}
+
+.about-icons img{
+    filter: brightness(0) invert(1);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 3rem;
+}
+.about-title{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-card:nth-child(1) { animation-delay: 0.2s; }
+.step-card:nth-child(2) { animation-delay: 0.4s; }
+.step-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* Media queries */
+@media (max-width: 1024px) {
+    .steps-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .crypto-steps-container {
+        margin-top: 8rem;
+        padding: 2rem 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-icons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-icons img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .crypto-steps-container p {
+        padding: 0 1rem;
+        font-size: 0.95rem;
+    }
+
+    .about-footer {
+        font-size: 0.85rem;
+    }
+}
+
+/* Estilos del Footer */
+.footer {
+    background-color: rgba(255, 255, 255, 0.2); /* Blanco con 30% de transparencia */
+    padding: 20px 40px;
+    border-top:  rgba(255, 255, 255, 0.2);
+    font-family: Arial, sans-serif;
+    color: #7a8f87;
+    backdrop-filter: blur(5px); /* Desenfoque suave para un efecto más elegante */
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+
+/* Iconos de Redes Sociales */
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #3a7d6d;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #2f6455;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 15px;
+    }
+}

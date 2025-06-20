@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MoneyMindIA</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/wallet.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MoneyMindIA.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebarX">
+            <div class="logo-container">
+                <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/MoneyMind%2FLogoMMA.png?alt=media&token=afa8e987-d925-4a0c-8afa-76ed6ecf4e36" alt="MoneyMind Logo" class="logo" />
+            </div>
+            <nav class="nav-menu">
+                <a href="@Url.Action("Dashboard","Home")"
+                   class="nav-item @(ViewContext.RouteData.Values["Action"]?.ToString() == "Dashboard" ? "active" : "")"
+                   title="Inicio">
+                    <i class="fas fa-home"style="color:white"></i>
+                </a>
+                <a href="@Url.Action("Wallet","Home")"
+                   class="nav-item @(ViewContext.RouteData.Values["Action"]?.ToString() == "Wallet" ? "active" : "")"
+                   title="Billetera">
+                    <i class="fas fa-wallet" style="color:white"></i>
+                </a>
+                <a href="@Url.Action("Chat","Home")"
+                   class="nav-item @(ViewContext.RouteData.Values["Action"]?.ToString() == "Chat" ? "active" : "")"
+                   title="Chat">
+                    <i class="fas fa-comments" style="color:white"></i>
+                </a>
+                <a href="@Url.Action("Login","Auth")"
+                   class="nav-item logout @(ViewContext.RouteData.Values["Action"]?.ToString() == "Login" ? "active" : "")"
+                   title="Cerrar sesión">
+                    <i class="fas fa-sign-out"></i>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+                @RenderBody()
+            
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

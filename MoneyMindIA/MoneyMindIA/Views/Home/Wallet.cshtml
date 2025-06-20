@@ -1,0 +1,107 @@
+﻿@using Microsoft.AspNetCore.Antiforgery
+@inject IAntiforgery Antiforgery
+
+@{
+    Layout = "_Layout";
+}
+
+<!-- Header -->
+<div class="header">
+    <h1>Billetera</h1>
+    <p class="subtext">Administra tus métodos de pago</p>
+</div>
+
+<!-- PayPal Section -->
+<div id="paypalSection">
+    <!-- Add PayPal Section -->
+    <div class="add-paypal-section">
+        <div class="paypal-container">
+            <div class="paypal-placeholder" id="paypalPlaceholder">
+                <i class="fab fa-paypal"></i>
+                <p>No tienes cuentas de PayPal vinculadas</p>
+            </div>
+            <button class="add-paypal-button" id="addPaypalButton">
+                <i class="fab fa-paypal"></i>
+                Vincular PayPal
+            </button>
+        </div>
+    </div>
+
+    <!-- Linked PayPal Account -->
+    <div class="linked-account" id="linkedAccount" style="display: none;">
+        <div class="account-card">
+            <div class="account-logo">
+                <i class="fab fa-paypal"></i>
+            </div>
+            <div class="account-details">
+                <p class="account-name">Nombre del Dueño</p>
+                <p class="account-email">correo@paypal.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Botón para Vincular Tarjeta -->
+<div class="add-card-section" id="addCardSection">
+    <button class="add-card-button" id="addCardButton">
+        <i class="fas fa-credit-card"></i>
+        Vincular Tarjeta
+    </button>
+</div>
+
+<!-- Card Input Form (Initially Hidden) - Version mejorada -->
+<div class="card-input-form" id="cardInputForm" style="display: none;">
+    @Html.AntiForgeryToken() 
+    <div class="form-group">
+        <label for="cardNumber">Número de Tarjeta</label>
+        <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required maxlength="19"
+               oninput="this.value = formatCardNumber(this.value)">
+        <small id="cardNumberError" class="error-text" style="display:none; color:red;"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="cardName">Nombre en la Tarjeta</label>
+        <input type="text" id="cardName" placeholder="Como aparece en la tarjeta" required maxlength="100">
+        <small id="cardNameError" class="error-text" style="display:none; color:red;"></small>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group half">
+            <label for="cardExpiry">Fecha Expiración</label>
+            <input type="text" id="cardExpiry" placeholder="MM/AA" required maxlength="5"
+                   oninput="this.value = formatCardExpiry(this.value)">
+            <small id="cardExpiryError" class="error-text" style="display:none; color:red;"></small>
+        </div>
+
+        <div class="form-group half">
+            <label for="cardCVC">CVC</label>
+            <input type="text" id="cardCVC" placeholder="XXX" required maxlength="3"
+                   oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <small id="cardCVCError" class="error-text" style="display:none; color:red;"></small>
+        </div>
+    </div>
+
+    <button class="submit-card-button" id="submitCardButton">Vincular Tarjeta</button>
+</div>
+
+<!-- Sección de Tarjeta Vinculada -->
+<div class="linked-card" id="linkedCard" style="display: none;">
+    <div class="card-container">
+        <div class="card-logo">
+            <i class="fas fa-credit-card"></i>
+        </div>
+        <div class="card-details">
+            <p class="card-number" id="linkedCardNumber">**** **** **** 1234</p>
+            <p class="card-name" id="linkedCardName">Nombre en la Tarjeta</p>
+            <p class="card-balance" id="linkedCardBalance">Saldo: $0.00</p>
+        </div>
+    </div>
+    <button class="unlink-card-button" id="unlinkCardButton">
+        <i class="fas fa-trash-alt"></i>
+        Desvincular Tarjeta
+    </button>
+</div>
+
+<input type="hidden" id="usuarioId" value="@ViewBag.UsuarioId" />
+
+<script src="~/js/Wallet.js"></script>

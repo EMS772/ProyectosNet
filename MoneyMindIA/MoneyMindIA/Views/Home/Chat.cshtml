@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "_ChatLayout";
+}
+
+<div class="chat-container">
+
+    <!-- Área de Bienvenida -->
+    <div class="welcome-message" id="welcomeMessage">
+        <div class="logo-container-b">
+            <img src="https://firebasestorage.googleapis.com/v0/b/twecommerce-14b8f.appspot.com/o/MoneyMind%2FLogoMMA.png?alt=media&token=afa8e987-d925-4a0c-8afa-76ed6ecf4e36" alt="Logo" class="logo-open" />
+        </div>
+        <div class="welcome-text">
+            <p>Hola, soy MoneyMind. ¿En qué puedo ayudarte hoy?</p>
+        </div>
+    </div>
+
+    <!-- Área de Conversación (oculta inicialmente) -->
+    <div class="chat-conversation" id="chatConversation" style="display: none;">
+        <!-- Mensajes -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Los mensajes se agregarán dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Preguntas Frecuentes Fijas -->
+    <div class="quick-actions">
+        <h3>Preguntas frecuentes</h3>
+        @Html.AntiForgeryToken()
+        <div class="actions-grid">
+            <!-- Botón 1: Enfocado en análisis de gastos -->
+            <button class="action-button" data-question="¿En qué categorías estoy gastando más dinero y cómo puedo reducir esos gastos?">
+                <i class="fas fa-chart-pie"></i>
+                <span>Análisis de gastos</span>
+            </button>
+
+            <!-- Botón 2: Enfocado en optimización de ingresos y gastos -->
+            <button class="action-button" data-question="¿Cómo puedo mejorar mi ahorro mensual sin afectar mi calidad de vida?">
+                <i class="fas fa-coins"></i>
+                <span>Optimizar ahorro</span>
+            </button>
+
+            <!-- Botón 3: Específicamente sobre metas financieras -->
+            <button class="action-button" data-question="¿Cómo puedo alcanzar mis metas más rápido?">
+                <i class="fas fa-bullseye"></i>
+                <span>Alcanzar metas</span>
+            </button>
+        </div>
+    </div>
+</div>

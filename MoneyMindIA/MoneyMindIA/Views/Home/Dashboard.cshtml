@@ -1,0 +1,683 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<header class="header">
+    <div class="balance-card">
+        <span class="balance-label">Balance Total</span>
+        <span class="balance-amount" id="balanceAmount">$0.00</span>
+        <div class="balance-change">
+            <i class="fas fa-arrow-up"></i>
+            <span>+2.5% este mes</span>
+        </div>
+    </div>
+</header>
+
+<!-- Transactions Section -->
+<section class="transactions">
+    <div class="section-header">
+        <h2>Gastos e Ingresos</h2>
+        <button class="btn-add" id="btnAddTransaction">
+            <i class="fas fa-plus"></i>
+            Agregar
+        </button>
+    </div>
+    <div class="transactions-list" id="transactionsList">
+        <!-- Transactions will be added dynamically -->
+        <div class="empty-state">
+            <i class="fas fa-coins"></i>
+            <p>No hay transacciones recientes</p>
+        </div>
+    </div>
+</section>
+
+<!-- Popup para agregar transacción -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+        <h3>Agregar Transacción</h3>
+        <form id="transactionForm">
+            <div class="form-group">
+                <label for="tipoTransaccion">Tipo</label>
+                <select id="tipoTransaccion" name="Tipo" required>
+                    <option value="Ingreso">Ingreso</option>
+                    <option value="Gasto">Gasto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="monto">Monto</label>
+                <input type="number" id="monto" name="Monto" step="0.01" placeholder="Ej: 100.00" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcion" name="Descripcion" placeholder="Ej: Pago de nómina" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="Fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="CategoriaId" asp-items="ViewBag.Categorias" required></select>
+            </div>
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-check"></i>
+                Agregar
+            </button>
+            <button type="button" class="btn-cancel" id="btnCancel">
+                <i class="fas fa-times"></i>
+                Cancelar
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Goals Section -->
+<section class="goals">
+    <div class="section-header">
+        <h2>Metas Financieras</h2>
+        <button class="btn-add" id="btnAddGoal">
+            <i class="fas fa-plus"></i>
+            Agregar
+        </button>
+    </div>
+    <div class="goals-list" id="goalsList">
+        <!-- Goals will be added dynamically -->
+        <div class="empty-state">
+            <i class="fas fa-bullseye"></i>
+            <p>No tienes metas activas</p>
+        </div>
+    </div>
+</section>
+
+<!-- Popup para agregar meta -->
+<div class="popup-overlay" id="popupOverlayGoal">
+    <div class="popup">
+        <h3>Crear una Nueva Meta</h3>
+        <form id="goalForm">
+            @Html.AntiForgeryToken() <!-- Token antiforgery -->
+            <div class="form-group">
+                <label for="descripcionMeta">Descripción de la Meta</label>
+                <input type="text" id="descripcionMeta" name="Descripcion" placeholder="Ej: Ahorro para vacaciones" required>
+            </div>
+            <div class="form-group">
+                <label for="montoObjetivoMeta">Monto Objetivo</label>
+                <input type="number" id="montoObjetivoMeta" name="MontoObjetivo" step="0.01" placeholder="Ej: 5000.00" required min="0.01">
+            </div>
+            <div class="form-group">
+                <label for="montoActualMeta">Monto Actual</label>
+                <input type="number" id="montoActualMeta" name="MontoActual" step="0.01" placeholder="Ej: 1000.00" min="0">
+            </div>
+            <div class="form-group">
+                <label for="fechaCumplimientoMeta">Fecha Límite</label>
+                <input type="date" id="fechaCumplimientoMeta" name="FechaCumplimiento" required>
+            </div>
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-check"></i>
+                Crear Meta
+            </button>
+            <button type="button" class="btn-cancel" id="btnCancelGoal">
+                <i class="fas fa-times"></i>
+                Cancelar
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Popup para editar meta -->
+<div class="popup-overlay" id="popupOverlayEditGoal">
+    <div class="popup">
+        <h3>Editar Meta</h3>
+        <form id="editGoalForm">
+            @Html.AntiForgeryToken()
+            <input type="hidden" id="editMetaId" name="MetaId">
+            <div class="form-group">
+                <label for="editDescripcionMeta">Descripción de la Meta</label>
+                <input type="text" id="editDescripcionMeta" name="Descripcion" placeholder="Ej: Ahorro para vacaciones" required>
+            </div>
+            <div class="form-group">
+                <label for="editMontoObjetivoMeta">Monto Objetivo</label>
+                <input type="number" id="editMontoObjetivoMeta" name="MontoObjetivo" step="0.01" placeholder="Ej: 5000.00" required min="0.01">
+            </div>
+            <div class="form-group">
+                <label for="editMontoActualMeta">Monto Actual</label>
+                <input type="number" id="editMontoActualMeta" name="MontoActual" step="0.01" placeholder="Ej: 1000.00" min="0">
+            </div>
+            <div class="form-group">
+                <label for="editFechaCumplimientoMeta">Fecha Límite</label>
+                <input type="date" id="editFechaCumplimientoMeta" name="FechaCumplimiento" required>
+            </div>
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-check"></i>
+                Guardar Cambios
+            </button>
+            <button type="button" class="btn-cancel" id="btnCancelEditGoal">
+                <i class="fas fa-times"></i>
+                Cancelar
+            </button>
+        </form>
+    </div>
+</div>
+</section>
+
+<script src="~/js/Wallet.js"></script>
+<script src="~/js/Transaccion.js"></script>
+
+<script>
+    // Mostrar popup de meta
+    document.getElementById('btnAddGoal').addEventListener('click', function () {
+        document.getElementById('popupOverlayGoal').style.display = 'flex';
+    });
+
+    // Ocultar popup de meta al cancelar
+    document.getElementById('btnCancelGoal').addEventListener('click', function () {
+        document.getElementById('popupOverlayGoal').style.display = 'none';
+    });
+
+    async function cargarMetas() {
+        try {
+            console.log("Cargando metas...");
+            // Realizar la solicitud al servidor
+            const response = await fetch('/Meta/ObtenerMetas', {
+                method: 'GET',
+                credentials: 'include'
+            });
+            console.log("Respuesta recibida:", response);
+
+            // Verificar si la respuesta es exitosa
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('Error response:', errorText);
+                throw new Error(`Error al obtener las metas: ${response.status} ${response.statusText}`);
+            }
+
+            // Parsear la respuesta como JSON
+            const result = await response.json();
+            console.log("Resultado completo:", result);
+
+            const goalsList = document.getElementById('goalsList');
+            if (!goalsList) {
+                console.error('No se encontró el elemento con ID "goalsList"');
+                return;
+            }
+
+            goalsList.innerHTML = ''; // Limpiar la lista
+
+            // Determinar la estructura correcta de los datos
+            let metas = [];
+
+            if (result.success === true) {
+                // Intentar diferentes rutas a los datos
+                if (result.metas && Array.isArray(result.metas)) {
+                    metas = result.metas;
+                } else if (result.metas && result.metas.$values && Array.isArray(result.metas.$values)) {
+                    metas = result.metas.$values;
+                } else if (result.data && Array.isArray(result.data)) {
+                    metas = result.data;
+                } else if (result.data && result.data.$values && Array.isArray(result.data.$values)) {
+                    metas = result.data.$values;
+                } else {
+                    // Buscar cualquier array en la respuesta
+                    for (const key in result) {
+                        if (Array.isArray(result[key])) {
+                            metas = result[key];
+                            break;
+                        } else if (result[key] && result[key].$values && Array.isArray(result[key].$values)) {
+                            metas = result[key].$values;
+                            break;
+                        }
+                    }
+                }
+            } else {
+                // La respuesta podría ser directamente un array
+                if (Array.isArray(result)) {
+                    metas = result;
+                }
+            }
+
+            console.log("Metas identificadas:", metas);
+
+            if (metas.length > 0) {
+                metas.forEach(meta => {
+                    const metaId = meta.MetaId || meta.metaId;
+                    const descripcion = meta.Descripcion || meta.descripcion || '';
+                    const montoActual = parseFloat(meta.MontoActual || meta.montoActual || 0);
+                    const montoObjetivo = parseFloat(meta.MontoObjetivo || meta.montoObjetivo || 0);
+                    const fechaCumplimiento = meta.FechaCumplimiento || meta.fechaCumplimiento || 'Sin fecha definida';
+                    const metaCompletada = montoActual >= montoObjetivo;
+
+                    // Calcular el progreso
+                    const progreso = montoObjetivo > 0 ? Math.min((montoActual / montoObjetivo) * 100, 100) : 0;
+                    const progresoFormateado = progreso.toFixed(2);
+
+                    // Formatear montos como moneda
+                    const montoActualFormateado = new Intl.NumberFormat('es-MX', {
+                        style: 'currency',
+                        currency: 'MXN'
+                    }).format(montoActual);
+
+                    const montoObjetivoFormateado = new Intl.NumberFormat('es-MX', {
+                        style: 'currency',
+                        currency: 'MXN'
+                    }).format(montoObjetivo);
+
+                    // Crear el elemento de la meta
+                    const goalItem = document.createElement('div');
+                    goalItem.className = `goal-item ${metaCompletada ? 'completed' : ''}`;
+                    goalItem.innerHTML = `
+                        <div class="goal-info">
+                            <span class="goal-title">${descripcion}</span>
+                            ${metaCompletada ? '<span class="goal-completed"><i class="fas fa-check-circle"></i></span>' : ''}
+                            <span class="goal-actions">
+                                <button class="btn-edit-goal" data-meta-id="${metaId}" title="Editar meta">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn-delete-goal" data-meta-id="${metaId}" title="Eliminar meta">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="goal-details">
+                            <div class="goal-progress">
+                                <div class="progress-bar" style="width: ${progreso}%"></div>
+                                <span class="progress-text">${progresoFormateado}% completado</span>
+                            </div>
+                            <div class="goal-amounts">
+                                <div class="amount-item">
+                                    <span class="amount-label">Ahorrado:</span>
+                                    <span class="amount-value">${montoActualFormateado}</span>
+                                </div>
+                                <div class="amount-item">
+                                    <span class="amount-label">Objetivo:</span>
+                                    <span class="amount-value">${montoObjetivoFormateado}</span>
+                                </div>
+                            </div>
+                            <div class="goal-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>Fecha límite: ${fechaCumplimiento}</span>
+                            </div>
+                        </div>
+                    `;
+                    goalsList.appendChild(goalItem);
+                });
+            } else {
+                console.log("No se encontraron metas en la respuesta");
+                goalsList.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-bullseye"></i>
+                        <p>No tienes metas activas</p>
+                    </div>
+                `;
+            }
+        } catch (error) {
+            console.error('Error al cargar las metas:', error);
+            // Mostrar un mensaje de error amigable
+            const goalsList = document.getElementById('goalsList');
+            if (goalsList) {
+                goalsList.innerHTML = `
+                    <div class="empty-state error">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>No se pudieron cargar las metas. Inténtalo de nuevo más tarde.</p>
+                        <p class="error-details">Detalle: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Agregar event listeners para los botones de eliminar
+        document.querySelectorAll('.btn-delete-goal').forEach(button => {
+            button.addEventListener('click', handleDeleteGoal);
+        });
+
+        // Agregar event listeners para los botones de editar
+        document.querySelectorAll('.btn-edit-goal').forEach(button => {
+            button.addEventListener('click', function () {
+                const metaId = this.getAttribute('data-meta-id');
+                abrirEditarMeta(metaId);
+            });
+        });
+    }
+
+    // Llamar a la función al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+        cargarMetas();
+    });
+    // Función para manejar la eliminación de una meta
+    async function handleDeleteGoal(event) {
+        event.preventDefault();
+
+        const metaId = this.dataset.metaId;
+        if (!metaId) {
+            console.error('No se encontró el ID de la meta');
+            return;
+        }
+
+        // Confirmación con SweetAlert antes de eliminar
+        const confirmacion = await Swal.fire({
+            title: '¿Estás seguro?',
+            text: '¿Deseas eliminar esta meta? Esta acción no se puede deshacer.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Sí, eliminar',
+            cancelButtonText: 'Cancelar',
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+        });
+
+        // Si el usuario confirma, proceder con la eliminación
+        if (confirmacion.isConfirmed) {
+            try {
+                // Obtener el token CSRF
+                const csrfToken = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                // Realizar la solicitud al servidor para eliminar la meta
+                const response = await fetch(`/Meta/EliminarMeta?id=${metaId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': csrfToken
+                    },
+                    credentials: 'include'
+                });
+
+                // Verificar si la respuesta es exitosa
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error('Error response:', errorText);
+                    throw new Error(`Error al eliminar la meta: ${response.status} ${response.statusText}`);
+                }
+
+                // Parsear la respuesta como JSON
+                const result = await response.json();
+
+                // Verificar si la eliminación fue exitosa
+                if (result.success) {
+                    // Mostrar notificación de éxito con SweetAlert
+                    await Swal.fire({
+                        icon: 'success',
+                        title: 'Meta eliminada',
+                        text: 'La meta se eliminó exitosamente.',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+
+                    // Recargar las metas
+                    cargarMetas();
+                } else {
+                    console.error('Error en la respuesta:', result.message);
+                    throw new Error(result.message);
+                }
+            } catch (error) {
+                console.error('Error al eliminar la meta:', error);
+                // Mostrar notificación de error con SweetAlert
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: `Error al eliminar la meta: ${error.message}`,
+                    confirmButtonText: 'OK'
+                });
+            }
+        }
+    }
+
+    document.getElementById('goalForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Obtener los datos del formulario
+        const descripcion = document.getElementById('descripcionMeta').value.trim();
+        const montoObjetivo = parseFloat(document.getElementById('montoObjetivoMeta').value);
+        const montoActual = parseFloat(document.getElementById('montoActualMeta').value || 0);
+        const fechaCumplimiento = document.getElementById('fechaCumplimientoMeta').value;
+
+        // Validar que la descripción no esté vacía
+        if (!descripcion) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'La descripción de la meta es obligatoria.',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
+
+        // Validar que la descripción no exceda los 200 caracteres
+        if (descripcion.length > 200) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'La descripción no puede exceder los 200 caracteres.',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
+
+        // Crear el objeto con los datos del formulario
+        const formData = {
+            Descripcion: descripcion,
+            MontoObjetivo: montoObjetivo,
+            MontoActual: montoActual,
+            FechaCumplimiento: fechaCumplimiento
+        };
+
+        console.log('Datos del formulario:', formData); // Depuración
+
+        try {
+            const response = await fetch('/Meta/CrearMeta', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value // Token antiforgery
+                },
+                body: JSON.stringify(formData),
+                credentials: 'include'
+            });
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('Error response:', errorText);
+                throw new Error(`Error al crear la meta: ${response.status} ${response.statusText}`);
+            }
+
+            const result = await response.json();
+            console.log('Respuesta del servidor:', result); // Depuración
+
+            if (result.success) {
+                // Mostrar mensaje de éxito con SweetAlert
+                await Swal.fire({
+                    icon: 'success',
+                    title: 'Meta agregada',
+                    text: 'La meta se agregó exitosamente.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+                // Resetear el formulario y ocultar el popup
+                document.getElementById('goalForm').reset();
+                document.getElementById('popupOverlayGoal').style.display = 'none';
+
+                // Recargar la lista de metas
+                await cargarMetas();
+            } else {
+                console.error('Server error:', result);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Error: ' + result.message,
+                    confirmButtonText: 'OK'
+                });
+            }
+        } catch (error) {
+            console.error('Fetch error:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Error al agregar la meta. Inténtalo de nuevo.',
+                confirmButtonText: 'OK'
+            });
+        }
+    });
+
+    // Función para abrir el popup de edición con los datos de la meta
+    async function abrirEditarMeta(metaId) {
+        try {
+            // Obtener los datos de la meta desde el servidor
+            const response = await fetch(`/Meta/ObtenerMetaPorId?id=${metaId}`, {
+                method: 'GET',
+                credentials: 'include'
+            });
+
+            if (!response.ok) throw new Error('Error al obtener los datos de la meta');
+
+            const result = await response.json();
+
+            if (result.success && result.meta) {
+                const meta = result.meta;
+
+                // Llenar el formulario
+                document.getElementById('editMetaId').value = meta.MetaId || meta.metaId;
+                document.getElementById('editDescripcionMeta').value = meta.Descripcion || meta.descripcion || '';
+                document.getElementById('editMontoObjetivoMeta').value = meta.MontoObjetivo || meta.montoObjetivo || 0;
+                document.getElementById('editMontoActualMeta').value = meta.MontoActual || meta.montoActual || 0;
+
+                // Formatear fecha
+                const fechaCumplimiento = meta.FechaCumplimiento || meta.fechaCumplimiento;
+                if (fechaCumplimiento) {
+                    const fecha = new Date(fechaCumplimiento);
+                    document.getElementById('editFechaCumplimientoMeta').value = fecha.toISOString().split('T')[0];
+                }
+
+                // Mostrar popup
+                document.getElementById('popupOverlayEditGoal').style.display = 'flex';
+
+                // Verificar si la meta está completa
+                const montoActual = parseFloat(meta.MontoActual || meta.montoActual || 0);
+                const montoObjetivo = parseFloat(meta.MontoObjetivo || meta.montoObjetivo || 0);
+
+                if (montoActual >= montoObjetivo) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Meta completada!',
+                        text: 'Ya has alcanzado el objetivo de esta meta.',
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+                }
+            } else {
+                throw new Error(result.message || 'No se pudo obtener la meta');
+            }
+        } catch (error) {
+            console.error('Error al abrir el editor de meta:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'No se pudieron cargar los datos de la meta para editar.',
+                confirmButtonText: 'OK'
+            });
+        }
+    }
+
+    // Event listener para el formulario de edición
+    document.getElementById('editGoalForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Obtener los datos del formulario
+        const metaId = document.getElementById('editMetaId').value;
+        const descripcion = document.getElementById('editDescripcionMeta').value.trim();
+        const montoObjetivo = parseFloat(document.getElementById('editMontoObjetivoMeta').value);
+        const montoActual = parseFloat(document.getElementById('editMontoActualMeta').value || 0);
+        const fechaCumplimiento = document.getElementById('editFechaCumplimientoMeta').value;
+
+        // Validaciones
+        if (!descripcion || descripcion.length > 200) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'La descripción es obligatoria y no puede exceder 200 caracteres.',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
+
+        if (montoObjetivo <= 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'El monto objetivo debe ser mayor que cero.',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
+
+        if (montoActual < 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'El monto actual no puede ser negativo.',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
+
+        // Crear el objeto con los datos del formulario
+        const formData = {
+            MetaId: metaId,
+            Descripcion: descripcion,
+            MontoObjetivo: montoObjetivo,
+            MontoActual: montoActual,
+            FechaCumplimiento: fechaCumplimiento
+        };
+
+        try {
+            const response = await fetch('/Meta/ActualizarMeta', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify(formData),
+                credentials: 'include'
+            });
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(`Error al actualizar la meta: ${response.status} ${response.statusText}`);
+            }
+
+            const result = await response.json();
+
+            if (result.success) {
+                // Mostrar mensaje de éxito
+                await Swal.fire({
+                    icon: 'success',
+                    title: 'Meta actualizada',
+                    text: 'Los cambios se guardaron exitosamente.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+                // Cerrar el popup y recargar las metas
+                document.getElementById('popupOverlayEditGoal').style.display = 'none';
+                await cargarMetas();
+            } else {
+                throw new Error(result.message || 'Error al actualizar la meta');
+            }
+        } catch (error) {
+            console.error('Error al actualizar la meta:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'No se pudo actualizar la meta. Inténtalo de nuevo.',
+                confirmButtonText: 'OK'
+            });
+        }
+    });
+
+    // Event listener para cancelar la edición
+    document.getElementById('btnCancelEditGoal').addEventListener('click', function () {
+        document.getElementById('popupOverlayEditGoal').style.display = 'none';
+    });
+
+    // Asegúrate de que esta línea esté al final de tu archivo JavaScript
+    document.addEventListener('DOMContentLoaded', () => {
+        cargarMetas();
+    });
+</script>
