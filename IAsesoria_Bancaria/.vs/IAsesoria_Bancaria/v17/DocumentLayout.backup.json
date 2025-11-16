@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\models\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\models\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\models\\services\\loanadvisorchatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\models\\services\\loanadvisorchatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\models\\services\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\models\\services\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\models\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\models\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\models\\interfaces\\iconversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\models\\interfaces\\iconversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\controllers\\conversationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\controllers\\conversationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|c:\\users\\julio cesar\\source\\repos\\iasesoria_bancaria\\iasesoria_bancaria\\models\\dto\u0027s\\conversationdto\u0027s\\getconversationsbyuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321CAF21-E824-445B-A0E0-6FF1343FA068}|IAsesoria_Bancaria\\IAsesoria_Bancaria.csproj|solutionrelative:iasesoria_bancaria\\models\\dto\u0027s\\conversationdto\u0027s\\getconversationsbyuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 146,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OpenAIService.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\OpenAIService.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Models\\Services\\OpenAIService.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\OpenAIService.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Models\\Services\\OpenAIService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T00:35:55.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoanAdvisorChatService.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\LoanAdvisorChatService.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Models\\Services\\LoanAdvisorChatService.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\LoanAdvisorChatService.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Models\\Services\\LoanAdvisorChatService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T00:35:29.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Models\\Services\\AuthServices.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\AuthServices.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Models\\Services\\AuthServices.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAA3wE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T00:34:38.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T00:34:12.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConversationController.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Controllers\\ConversationController.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Controllers\\ConversationController.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Controllers\\ConversationController.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Controllers\\ConversationController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:41:08.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IConversationService.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Interfaces\\IConversationService.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Models\\Interfaces\\IConversationService.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Interfaces\\IConversationService.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Models\\Interfaces\\IConversationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:35:10.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConversationService.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\ConversationService.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Models\\Services\\ConversationService.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Services\\ConversationService.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Models\\Services\\ConversationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:36:13.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Program.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Program.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Program.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T03:52:39.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetConversationsByUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Dto\u0027s\\ConversationDto\u0027s\\GetConversationsByUserDTO.cs",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Models\\Dto\u0027s\\ConversationDto\u0027s\\GetConversationsByUserDTO.cs",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Models\\Dto\u0027s\\ConversationDto\u0027s\\GetConversationsByUserDTO.cs",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Models\\Dto\u0027s\\ConversationDto\u0027s\\GetConversationsByUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T03:32:52.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "IAsesoria_Bancaria\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Julio Cesar\\source\\repos\\IAsesoria_Bancaria\\IAsesoria_Bancaria\\Properties\\launchSettings.json",
+              "RelativeToolTip": "IAsesoria_Bancaria\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-09T03:54:08.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

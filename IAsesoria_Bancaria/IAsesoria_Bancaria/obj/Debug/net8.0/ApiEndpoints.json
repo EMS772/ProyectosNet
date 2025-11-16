@@ -1,0 +1,193 @@
+[
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "IAsesoria_Bancaria.Models.Dto_s.UserDto_s.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createUserDTO",
+        "Type": "IAsesoria_Bancaria.Models.Dto_s.UserDto_s.CreateUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.ConversationController",
+    "Method": "GetConversationById",
+    "RelativePath": "api/Conversation/Conversation/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.ConversationController",
+    "Method": "CreateConversation",
+    "RelativePath": "api/Conversation/CreateConversation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationDTO",
+        "Type": "IAsesoria_Bancaria.Models.Dto_s.Conversation.ConversationCupDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.ConversationController",
+    "Method": "DeleteConversation",
+    "RelativePath": "api/Conversation/DeleteConversation/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.ConversationController",
+    "Method": "GetConversationsByUser",
+    "RelativePath": "api/Conversation/GetConversationsByUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "IAsesoria_Bancaria.Models.Dto_s.ConversationDto_s.GetConversationsByUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.ConversationController",
+    "Method": "UpdateConversationTimestamp",
+    "RelativePath": "api/Conversation/UpdateConversationTimestamp",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.ConversationController",
+    "Method": "UpdateConversationTitle",
+    "RelativePath": "api/Conversation/UpdateConversationTitle/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cTitulo",
+        "Type": "IAsesoria_Bancaria.Models.Dto_s.Conversation.ConversationCupDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.MessageController",
+    "Method": "AddMessage",
+    "RelativePath": "api/Message/AddMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageDTO",
+        "Type": "IAsesoria_Bancaria.Models.Dto_s.MessageDto_s.MessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.MessageController",
+    "Method": "ChatWithAI",
+    "RelativePath": "api/Message/ChatWithAI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "IAsesoria_Bancaria.Models.Dto_s.ChatDto_s.ChatRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IAsesoria_Bancaria.Controllers.MessageController",
+    "Method": "GetMessagesByConversation",
+    "RelativePath": "api/Message/GetMessagesByConversation/{conversationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

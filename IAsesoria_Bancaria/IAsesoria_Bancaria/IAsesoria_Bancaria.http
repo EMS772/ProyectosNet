@@ -1,0 +1,6 @@
+@IAsesoria_Bancaria_HostAddress = http://localhost:5031
+
+GET {{IAsesoria_Bancaria_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
